@@ -1,0 +1,34 @@
+OBJECT Table 50041 IPOPGame_Cycle
+{
+  OBJECT-PROPERTIES
+  {
+    Date=04/05/23;
+    Time=16:59:45;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;idCycle             ;Integer        }
+    { 2   ;   ;nameCycle           ;Text30         }
+    { 3   ;   ;grade               ;Text30         }
+    { 4   ;   ;family_idFamily     ;Integer        }
+  }
+  KEYS
+  {
+    {    ;idCycle                                 ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

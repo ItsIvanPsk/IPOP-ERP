@@ -1,0 +1,33 @@
+OBJECT Table 50043 IPOPGame_professionalFamily
+{
+  OBJECT-PROPERTIES
+  {
+    Date=04/05/23;
+    Time=17:03:29;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;idFamily            ;Integer        }
+    { 2   ;   ;nameFamily          ;Text30         }
+    { 3   ;   ;link                ;Text250        }
+  }
+  KEYS
+  {
+    {    ;idFamily                                ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

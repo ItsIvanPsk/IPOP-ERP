@@ -1,0 +1,38 @@
+OBJECT Table 50044 IPOPGame_ranking
+{
+  OBJECT-PROPERTIES
+  {
+    Date=04/05/23;
+    Time=17:05:25;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;idRanking           ;Integer        }
+    { 2   ;   ;aliasPlayer         ;Text30         }
+    { 3   ;   ;timeStart           ;DateTime       }
+    { 4   ;   ;timeEnd             ;DateTime       }
+    { 5   ;   ;correctTotems       ;Integer        }
+    { 6   ;   ;wrongTotems         ;Integer        }
+    { 7   ;   ;points              ;Integer        }
+    { 8   ;   ;cycle_idCycle       ;Integer        }
+  }
+  KEYS
+  {
+    {    ;idRanking                               ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

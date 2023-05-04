@@ -1,0 +1,109 @@
+idocupation;descriptionOcupation;cycle_idCycle
+1;a) Personal tècnic instal·lador-reparador d’equips informàtics.;1
+2;b) Personal tècnic de suport informàtic. ;1
+3;c) Personal tècnic de suport informàtic. ;1
+4;d) Personal reparador de perifèrics de sistemes microinformàtics. ;1
+5;e) Comercials de microinformàtica. ;1
+6;f) Personal operador de teleassistència. ;1
+7;g) Personal operador de sistemes.;1
+8;a) Personal auxiliar administratiu.;2
+9;b) Personal ajudant d’oficina. ;2
+10;c) Personal auxiliar administratiu de cobraments i pagaments;2
+11;d) Personal administratiu comercial. ;2
+12;e) Personal auxiliar administratiu de gestió de personal. ;2
+13;f) Personal auxiliar administratiu de les administracions públiques. ;2
+14;g) Recepcionista. ;2
+15;h) Personal empleat d’atenció al client. ;2
+16;i) Personal empleat de tresoreria. ;2
+17;j) Personal empleat de mitjans de pagament.;2
+18;a) Electronicistes de vehicles. ;3
+19;b) Electricistes electrònics de manteniment i reparació en automoció. ;3
+20;c) Personal mecànic d’automòbils. ;3
+21;d) Electricistes d’automòbils. ;3
+22;e) Personal electromecànic d’automòbils. ;3
+23;f) Personal mecànic de motors i els seus sistemes auxiliars d’automòbils i motocicletes. ;3
+24;g) Personal reparador de sistemes pneumàtics i hidràulics. ;3
+25;h) Personal reparador de sistemes de transmissió i de frens. ;3
+26;i) Personal reparador de sistemes de direcció i suspensió. ;3
+27;j) Personal operari d’ITV;3
+28;k) Personal instal·lador d’accessoris en vehicles. ;3
+29;l) Personal operari d’empreses dedicades a la fabricació de recanvis. ;3
+30;m) Personal electromecànic de motocicletes.;3
+31;n) Personal venedor/distribuïdor de recanvis i d’equips de diagnosi.;3
+32;a) Mecànic de manteniment. ;4
+33;b) Muntador industrial. ;4
+34;c) Muntador d’equips elèctrics. ;4
+35;d) Muntador d’equips electrònics. ;4
+36;e) Mantenidor de línia automatitzada.;4
+37;f) Muntador de béns d’equip. ;4
+38;g) Muntador d’automatismes pneumàtics i hidràulics. ;4
+39;h) Instal·lador electricista industrial. ;4
+40;i) Electricista de manteniment i reparació d’equips de control, mesura i precisió.;4
+41;a) Personal ajustador operari de màquines eina. ;5
+42;b) Personal polidor de metalls i afilador d’eines. ;5
+43;c) Personal operador de màquines per treballar metalls. ;5
+44;d) Personal operador de màquines eina. ;5
+45;e) Personal operador de robots industrials. ;5
+46;f) Personal treballador de la fabricació d’eines, mecànic i ajustador, modelista matricer i similars. ;5
+47;g) Personal torner, fresador i mandrinador. ;5
+48;a) Personal tècnic en administració de sistemes. ;6
+49;b) Responsable d’informàtica. ;6
+50;c) Personal tècnic en serveis d’Internet. ;6
+51;d) Personal tècnic en serveis de missatgeria electrònica. ;6
+52;e) Personal de recolzament i suport tècnic. ;6
+53;f) Personal tècnic en teleassistència. ;6
+54;g) Personal tècnic en administració de base de dades. ;6
+55;h) Personal tècnic de xarxes. ;6
+56;i) Personal supervisor de sistemes. ;6
+57;j) Personal tècnic en serveis de comunicacions. ;6
+58;k) Personal tècnic en entorns web.;6
+59;a) Desenvolupar aplicacions informàtiques per a la gestió empresarial i de negoci. ;7
+60;b) Desenvolupar aplicacions de propòsit general. ;7
+61;c) Desenvolupar aplicacions en l’àmbit de l’entreteniment i la informàtica mòbil.;7
+62;a) Programador web. ;8
+63;b) Programador multimèdia. ;8
+64;c) Desenvolupador d’aplicacions en entorns web.;8
+65;a) Administratiu d’oficina. ;9
+66;b) Administratiu comercial. ;9
+67;c) Administratiu financer. ;9
+68;d) Administratiu comptable. ;9
+69;e) Administratiu de logística.;9
+70;f) Administratiu de banca i d’assegurances. ;9
+71;g) Administratiu de recursos humans. ;9
+72;h) Administratiu de l’Administració pública. ;9
+73;j) Tècnic en gestió de cobraments. ;9
+74;k) Responsable d’atenció al client.;9
+75;a) Assistent a la direcció. ;10
+76;b) Assistent personal. ;10
+77;c) Secretari de direcció. ;10
+78;d) Assistent de despatxos i oficines. ;10
+79;e) Assistent jurídic. ;10
+80;f) Assistent en departaments de recursos humans. ;10
+81;g) Administratiu en les administracions i organismes públics. ;10
+82;a) Cap de l’àrea d’electromecànica. ;11
+83;b) Recepcionista de vehicles.;11
+84;c) Cap de taller de vehicles de motor. ;11
+85;d) Personal encarregat d’ITV. ;11
+86;e) Personal perit taxador de vehicles. ;11
+87;f) Cap de servei. ;11
+88;g) Personal encarregat d’àrea de recanvis. ;11
+89;h) Personal encarregat d’àrea comercial d’equips relacionats amb els vehicles. ;11
+90;i) Cap de l’àrea de carrosseria: xapa i pintura.;11
+91;a) Tècnic en planificació i programació de processos de manteniment d’instal·lacions de maquinària i equip industrial. ;12
+92;b) Cap d’equip de muntadors d’instal·lacions de maquinària i equip industrial. ;12
+93;c) Cap d’equip de mantenidors d’instal·lacions de maquinària i equip industrial.;12
+94;a) Tècnic o tècnica en mecànica. ;13
+95;b) Encarregat o encarregada d’instal·lacions de processament de metalls. ;13
+96;c) Encarregat o encarregada d’operadors de màquines per treballar metalls. ;13
+97;d) Encarregat o encarregada de muntadors. ;13
+98;e) Programador o programadora de CNC (control numèric amb ordinador). ;13
+99;f) Programador o programadora de sistemes automatitzats en fabricació mecànica. ;13
+100;g) Programador o programadora de la producció.;12
+101;a) Encargado de montaje de redes de abastecimiento y distribución de agua. ;14
+102;b) Encargado de montaje de redes e instalaciones de saneamiento. ;14
+103;c) Encargado de mantenimiento de redes de agua.;14
+104;d) Encargado de mantenimiento de redes de saneamiento. ;14
+105;e) Operador de planta de tratamiento de agua de abastecimiento. ;14
+106;f) Operador de planta de tratamiento de aguas residuales. ;14
+107;g) Técnico en gestión del uso eficiente del agua;14
+108;h) Técnico en sistemas de distribución de agua.;14
