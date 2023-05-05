@@ -3,7 +3,7 @@ OBJECT Table 50043 IPOPGame_professionalFamily
   OBJECT-PROPERTIES
   {
     Date=04/05/23;
-    Time=17:03:29;
+    Time=18:17:50;
     Modified=Yes;
     Version List=;
   }
@@ -13,7 +13,7 @@ OBJECT Table 50043 IPOPGame_professionalFamily
   FIELDS
   {
     { 1   ;   ;idFamily            ;Integer        }
-    { 2   ;   ;nameFamily          ;Text30         }
+    { 2   ;   ;nameFamily          ;Text250        }
     { 3   ;   ;link                ;Text250        }
   }
   KEYS

@@ -1,9 +1,9 @@
-OBJECT Table 50041 IPOPGame_Cycle
+OBJECT Table 50041 IPOPGame_cycle
 {
   OBJECT-PROPERTIES
   {
     Date=04/05/23;
-    Time=16:59:45;
+    Time=18:17:37;
     Modified=Yes;
     Version List=;
   }
@@ -13,8 +13,8 @@ OBJECT Table 50041 IPOPGame_Cycle
   FIELDS
   {
     { 1   ;   ;idCycle             ;Integer        }
-    { 2   ;   ;nameCycle           ;Text30         }
-    { 3   ;   ;grade               ;Text30         }
+    { 2   ;   ;nameCycle           ;Text250        }
+    { 3   ;   ;grade               ;Text250        }
     { 4   ;   ;family_idFamily     ;Integer        }
   }
   KEYS

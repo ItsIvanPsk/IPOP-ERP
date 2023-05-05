@@ -1,0 +1,51 @@
+OBJECT Page 50042 pageOcupation_IPOPGame
+{
+  OBJECT-PROPERTIES
+  {
+    Date=05/05/23;
+    Time=18:14:39;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    SourceTable=Table50042;
+    PageType=List;
+    ActionList=ACTIONS
+    {
+      { 1106000005;  ;ActionContainer;
+                      Name=container1;
+                      ActionContainerType=NewDocumentItems }
+      { 1106000006;1 ;Action    ;
+                      Name=mostra Cicle;
+                      RunObject=Page 50041;
+                      RunPageLink=idCycle=FIELD(cycle_idCycle) }
+    }
+  }
+  CONTROLS
+  {
+    { 1106000000;0;Container;
+                ContainerType=ContentArea }
+
+    { 1106000001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1106000002;2;Field  ;
+                SourceExpr=idOcupation }
+
+    { 1106000003;2;Field  ;
+                SourceExpr=description }
+
+    { 1106000004;2;Field  ;
+                SourceExpr=cycle_idCycle }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

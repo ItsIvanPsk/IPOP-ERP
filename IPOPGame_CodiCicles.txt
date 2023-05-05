@@ -1,0 +1,154 @@
+OBJECT Codeunit 50081 IPOPGame_CodiCicles
+{
+  OBJECT-PROPERTIES
+  {
+    Date=05/05/23;
+    Time=18:28:09;
+    Modified=Yes;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    OnRun=BEGIN
+
+            CR := 13; // Carriage Return - (Hex $0D)
+            LF := 10; // Line Feed - (Hex $0A)
+            menuActiu := TRUE;
+
+            WHILE menuActiu DO BEGIN
+            input := Window.InputBox('Escull una opcio: 1 i 4:  '
+            + FORMAT(CR)+FORMAT(LF)+ '1 - Alta Cicle'
+            + FORMAT(CR)+FORMAT(LF)+ '2 - Modificacio Cicle'
+            + FORMAT(CR)+FORMAT(LF)+ '3 - Elimina Cicle'
+            + FORMAT(CR)+FORMAT(LF)+ '4 - SORTIR'
+            , 'IETI Corn', '', 750, 300);
+
+            CASE input OF
+              '1':
+                BEGIN
+                  Window.MsgBox('Alta cicle', 0, '');
+
+                  nom_NouCicle := Window.InputBox('Introdueix el nom del cicle a insertar:'
+                  , 'Nom Cicle', '', 100, 10);
+                  grau_NouCicle := Window.InputBox('Introdueix el grau mitja o superior:'
+                  , 'Grau del cicle', '', 100, 10);
+                  id_NouCicleInput := Window.InputBox('Introdueix el codi del nou cicle:'
+                  , 'Codi del cicle', '', 100, 10);
+                  id_FamiliaNouCicleInput := Window.InputBox('Introdueix l id de la familia a la que pertany el cicle:'
+                  , 'Familia del cicle', '', 100, 10);
+                  EVALUATE(id_NouCicle, id_NouCicleInput);
+                  EVALUATE(id_FamiliaNouCicle, id_FamiliaNouCicleInput);
+
+                  codiTrobat_P1 := FALSE;
+                  Cicle.idCycle := id_NouCicle;
+                  IF Cicle.FIND ('=') THEN
+                    codiTrobat_P1 := TRUE;
+
+                  IF (codiTrobat_P1 = FALSE) THEN
+                    Window.MsgBox('Insertarem el cicle grau '+grau_NouCicle
+                    +' '+nom_NouCicle
+                    +' amb codi de cicle '+FORMAT(id_NouCicle)
+                    +' amb codi de familia '+FORMAT(id_FamiliaNouCicle), 0, '');
+                    Cicle.idCycle := id_NouCicle;
+                    Cicle.nameCycle := nom_NouCicle;
+                    Cicle.grade := grau_NouCicle;
+                    Cicle.family_idFamily := id_FamiliaNouCicle;
+                    Cicle.INSERT;
+
+                  IF (codiTrobat_P1 = TRUE) THEN
+                     Window.MsgBox('El codi de cicle '+FORMAT(id_NouCicle)+' ja es troba a la taula i no es pot insertar', 0, '');
+
+                END;
+
+              '2':
+                BEGIN
+                  Window.MsgBox('Modificacio Cicle', 0, '');
+
+                  id_NouCicleInput := Window.InputBox('Introdueix el codi del cicle a modificar:'
+                  , 'Codi del cicle', '', 100, 10);
+                  EVALUATE(id_NouCicle, id_NouCicleInput);
+
+                  codiTrobat_P1 := FALSE;
+                  Cicle.idCycle := id_NouCicle;
+                  IF Cicle.FIND ('=') THEN
+                    codiTrobat_P1 := TRUE;
+
+                  IF codiTrobat_P1 = TRUE THEN
+                    nom_NouCicle := Window.InputBox('Introdueix el nou nom del cicle:'
+                    , 'Nom Cicle', '', 100, 10);
+                    grau_NouCicle := Window.InputBox('Introdueix el grau mitja o superior:'
+                    , 'Grau del cicle', '', 100, 10);
+                    id_FamiliaNouCicleInput := Window.InputBox('Introdueix l id de la familia a la que pertany el cicle:'
+                    , 'Familia del cicle', '', 100, 10);
+                    EVALUATE(id_FamiliaNouCicle, id_FamiliaNouCicleInput);
+
+                    Window.MsgBox('Actualitzarem el cicle amb aquesta informacio Grau ='+grau_NouCicle
+                    +'Nom: '+nom_NouCicle
+                    +' Codi Familia:  '+FORMAT(id_FamiliaNouCicle), 0, '');
+                    Cicle.nameCycle := nom_NouCicle;
+                    Cicle.grade := grau_NouCicle;
+                    Cicle.family_idFamily := id_FamiliaNouCicle;
+                    Cicle.MODIFY;
+
+                  IF (codiTrobat_P1 = FALSE) THEN
+                     Window.MsgBox('No s ha trobat el cicle amb el codi '+FORMAT(id_NouCicle), 0, '');
+
+                END;
+
+              '3':
+                BEGIN
+                  Window.MsgBox('Elimina Cicle', 0, '');
+                  id_CicleEsborrarInput := Window.InputBox('Introdueix la id del cicle a esborrar:'
+                  , 'Id Cicle a esborrar', '', 100, 10);
+                  EVALUATE(id_CicleEsborrar, id_CicleEsborrarInput);
+
+                  nom_CicleEsborrat:='';
+                  cicleEsborrat := FALSE;
+                  nom_CicleEsborrat := Cicle.nameCycle;
+                  Cicle.idCycle := id_CicleEsborrar;
+
+                  IF Cicle.FIND ('=') THEN
+                    Cicle.DELETE;
+                    Window.MsgBox('Cicle amb codi '+FORMAT(id_CicleEsborrar)+ ' i nom '+nom_CicleEsborrat+ ' eliminat', 0, '');
+                    cicleEsborrat := TRUE;
+
+                  IF (cicleEsborrat = FALSE) THEN
+                    Window.MsgBox('No s ha trobat cap cicle amb codi '+FORMAT(id_CicleEsborrar), 0, '');
+
+                  END;
+
+              '4':
+                BEGIN
+                  menuActiu := FALSE;
+                END;
+              END;
+             END;
+          END;
+
+  }
+  CODE
+  {
+    VAR
+      menuActiu@1106000004 : Boolean;
+      Window@1106000003 : DotNet "'Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Microsoft.VisualBasic.Interaction" RUNONCLIENT;
+      input@1106000002 : Text;
+      CR@1106000001 : Char;
+      LF@1106000000 : Char;
+      Cicle@1106000005 : Record 50041;
+      nom_NouCicle@1106000006 : Text;
+      id_NouCicle@1106000007 : Integer;
+      grau_NouCicle@1106000008 : Text;
+      id_FamiliaNouCicle@1106000009 : Integer;
+      id_NouCicleInput@1106000010 : Text;
+      id_FamiliaNouCicleInput@1106000011 : Text;
+      codiTrobat_P1@1106000012 : Boolean;
+      id_CicleEsborrar@1106000013 : Integer;
+      id_CicleEsborrarInput@1106000014 : Text;
+      nom_CicleEsborrat@1106000015 : Text;
+      cicleEsborrat@1106000016 : Boolean;
+
+    BEGIN
+    END.
+  }
+}
+
